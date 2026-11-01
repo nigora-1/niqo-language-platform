@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NIQO — o'yinlashtirilgan til o'rganish platformasi">
+  <title>NIQO — Learn beyond limits</title>
+
+  <!-- Tashqi CSS fayl: asosiy dizayn qoidalari shu faylda yozilgan. -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Ichki CSS: ushbu sahifaga xos kichik qo'shimcha bezak. -->
+  <style>
+    .hero-note { border-left: 3px solid var(--gold); padding-left: 14px; }
+    #welcome-message { min-height: 24px; color: var(--gold-dark); font-weight: 600; }
+  </style>
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="NIQO bosh sahifa"><span class="brand-mark">N✦</span><span>NIQO</span></a>
+    <nav class="main-nav" aria-label="Asosiy navigatsiya">
+      <a href="#features">Imkoniyatlar</a>
+      <a href="#path">O'rganish yo'li</a>
+      <a href="#progress">Natijalar</a>
+      <a href="#media">Media</a>
+    </nav>
+    <button class="theme-toggle" id="themeToggle" type="button" aria-label="Rang rejimini almashtirish">☼</button>
+  </header>
+
+  <main>
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">YOUR LANGUAGE. YOUR UNIVERSE.</p>
+        <h1>Har bir so'z — <em>yangi bir olam.</em></h1>
+        <p class="hero-text">NIQO bilan til o'rganish oddiy dars emas. Har bir mashq — yangi bosqich, har bir so'z — yangi imkoniyat.</p>
+        <div class="hero-actions">
+          <a class="button button-gold" href="#register">Sayohatni boshlash</a>
+          <a class="text-link" href="#path">Platformani ko'rish ↗</a>
+        </div>
+        <p class="hero-note">Bugun 10 ta yangi so'z. Ertaga — yanada katta imkoniyat.</p>
+        <p id="welcome-message" aria-live="polite"></p>
+      </div>
+      <div class="orbit-scene" aria-label="NIQO olamining dekorativ tasviri">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="planet"><span>NIQO</span></div><span class="star star-a">✦</span><span class="star star-b">✧</span>
+        <span class="orbit-label">LEARN • PLAY • GROW</span>
+      </div>
+    </section>
+
+    <section class="features section-wrap" id="features">
+      <div class="section-heading"><p class="eyebrow">WHY NIQO</p><h2>O'rganishning yangi usuli</h2><p>Bilim, o'yin va shaxsiy rivojlanish bir platformada.</p></div>
+      <div class="feature-grid">
+        <article class="feature-card"><span class="feature-icon">✧</span><h3>Gamifikatsiya</h3><p>Mashqlarni bajaring, XP ball to'plang va yangi darajalarga chiqing.</p></article>
+        <article class="feature-card"><span class="feature-icon">⌁</span><h3>Audio talaffuz</h3><p>So'zlarni tinglang va to'g'ri talaffuzni mashq qiling.</p></article>
+        <article class="feature-card"><span class="feature-icon">◈</span><h3>Shaxsiy progress</h3><p>O'rganilgan so'zlar va kunlik faollikni kuzatib boring.</p></article>
+      </div>
+    </section>
+
+    <section class="learning section-wrap" id="path">
+      <div class="section-heading"><p class="eyebrow">YOUR JOURNEY</p><h2>NIQO bilan o'rganish yo'li</h2></div>
+      <ol class="journey-list">
+        <li><span>01</span><div><h3>Maqsadni tanlang</h3><p>Ingliz tilidagi boshlang'ich maqsadingizni belgilang.</p></div></li>
+        <li><span>02</span><div><h3>So'zlarni o'rganing</h3><p>Yangi so'z, tarjima va audio talaffuz bilan tanishing.</p></div></li>
+        <li><span>03</span><div><h3>Sinovdan o'ting</h3><p>Qisqa mashqlar orqali bilimni mustahkamlang.</p></div></li>
+      </ol>
+    </section>
+
+    <section class="dashboard section-wrap" id="progress">
+      <div class="section-heading"><p class="eyebrow">YOUR PROGRESS</p><h2>Namunaviy o'quv natijalari</h2><p>Quyidagi jadval NIQO platformasidagi progress ko'rinishini namoyish etadi.</p></div>
+      <div class="table-scroll">
+        <table>
+          <caption>Haftalik o'quv statistikasi</caption>
+          <thead><tr><th>Kun</th><th>Yangi so'zlar</th><th>XP ball</th><th>Holat</th></tr></thead>
+          <tbody>
+            <tr><td>Dushanba</td><td>10</td><td>120</td><td><span class="status done">Bajarildi</span></td></tr>
+            <tr><td>Seshanba</td><td>8</td><td>95</td><td><span class="status done">Bajarildi</span></td></tr>
+            <tr><td>Chorshanba</td><td>12</td><td>140</td><td><span class="status current">Davom etmoqda</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="progress-area"><div class="progress-label"><span>Haftalik maqsad</span><strong>60%</strong></div><div class="progress-track"><span></span></div></div>
+    </section>
+
+    <section class="media-section section-wrap" id="media">
+      <div class="section-heading"><p class="eyebrow">LISTEN & WATCH</p><h2>Audio va video dars</h2><p>Multimedia materiallari til o'rganish jarayonini boyitadi.</p></div>
+      <div class="media-grid">
+        <article class="media-card"><img src="assets/vocabulary.svg" alt="Vocabulary kartochkasi: Hello — Salom">
+          <div class="media-content"><h3>So'z talaffuzi</h3><p>“Hello” so'zining audio namunasini tinglang.</p>
+            <audio controls preload="metadata"><source src="assets/hello-pronunciation.wav" type="audio/wav">Brauzeringiz audio elementini qo'llab-quvvatlamaydi.</audio>
+          </div>
+        </article>
+        <article class="media-card"><video controls preload="metadata" poster="assets/video-poster.svg" width="100%">
+          <source src="assets/niqo-intro.mp4" type="video/mp4">Brauzeringiz video elementini qo'llab-quvvatlamaydi.
+        </video><div class="media-content"><h3>NIQO bilan tanishing</h3><p>Platformaning qisqa tanishtiruv videosi.</p></div></article>
+      </div>
+      <p class="download-line">Qo'shimcha material: <a href="assets/niqo-study-guide.pdf" target="_blank" rel="noopener">NIQO mini qo'llanmasini PDF formatida ochish</a>.</p>
+    </section>
+
+    <section class="map-section section-wrap">
+      <div class="section-heading"><p class="eyebrow">EXPLORE</p><h2>O'rganish xaritasi</h2><p>Rasmning belgilangan nuqtalarini bosing: har biri o'quv bosqichiga olib boradi.</p></div>
+      <div class="map-frame">
+        <!-- HTML map tegi: rasmning turli hududlariga bosiladigan nuqtalar biriktirilgan. -->
+        <img src="assets/learning-map.svg" alt="NIQO o'rganish xaritasi" usemap="#niqo-map" class="learning-map">
+        <map name="niqo-map">
+          <area shape="circle" coords="105,105,48" href="#path" alt="Boshlang'ich bosqich" title="Boshlang'ich bosqich">
+          <area shape="circle" coords="300,105,48" href="#media" alt="Tinglash bosqichi" title="Tinglash bosqichi">
+          <area shape="circle" coords="495,105,48" href="#progress" alt="Natijalar bosqichi" title="Natijalar bosqichi">
+        </map>
+      </div>
+    </section>
+
+    <section class="register-section section-wrap" id="register">
+      <div class="register-copy"><p class="eyebrow">JOIN THE JOURNEY</p><h2>O'z til sayohatingizni boshlang</h2><p>Formani to'ldiring. Ushbu o'quv loyihasida forma frontend namunasi sifatida ishlaydi.</p></div>
+      <form id="registerForm" class="register-form">
+        <label for="fullName">Ismingiz</label><input id="fullName" name="fullName" type="text" placeholder="Ismingizni kiriting" required>
+        <label for="email">Elektron pochta</label><input id="email" name="email" type="email" placeholder="name@example.com" required>
+        <label for="level">Til darajangiz</label><select id="level" name="level"><option value="beginner">Beginner — boshlang'ich</option><option value="intermediate">Intermediate — o'rta</option><option value="advanced">Advanced — yuqori</option></select>
+        <label class="check-label"><input type="checkbox" required> Ma’lumotlarimdan foydalanishga roziman.</label>
+        <button class="button button-gold" type="submit">Ro'yxatdan o'tish</button>
+        <p id="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+
+    <section class="resources section-wrap">
+      <div><p class="eyebrow">STUDY SMART</p><h2>Bugungi mini-reja</h2></div>
+      <ul class="task-list"><li>10 ta yangi so'z yodlash</li><li>Audio talaffuzni 3 marta tinglash</li><li>5 ta gap tuzish</li><li>Kun yakunida o'z progressini tekshirish</li></ul>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">N✦</span><span>NIQO</span></a><p>Learn beyond limits. © 2026 NIQO — o'quv loyiha prototipi.</p><a href="#home">Yuqoriga qaytish ↑</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
